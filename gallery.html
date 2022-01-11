@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<title>Nur Qurratu'Aini Personal Webpage</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
+.mySlides {display:none}
+.w3-tag, .fa {cursor:pointer}
+.w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+</style>
+<body>
+
+<audio controls autoplay>
+  <source src="sound/intro.mp3" type="audio/mpeg">
+</audio>
+
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-large w3-light-grey">
+    <div class="w3-col s3">
+      <a href="index.html" class="w3-button w3-block">Home</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="biodata.html" class="w3-button w3-block">Biodata</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="family.html" class="w3-button w3-block">Family</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="education.html" class="w3-button w3-block">Education</a>
+    </div>
+      <div class="w3-col s3">
+      <a href="skills.html" class="w3-button w3-block">Skills</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="award.html" class="w3-button w3-block">Award</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="experience.html" class="w3-button w3-block">Experience</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="gallery.html" class="w3-button w3-block">Gallery</a>
+    </div>
+    </div>
+  </div>
+</div>
+
+<!-- Grid -->
+  <div class="w3-row-padding" id="about">
+    <div class="w3-center w3-padding-64">
+      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">My Lovely Memories</span>
+    </div>
+
+<img src="images/gallery1.jpg" align="left" width="250" height="200"><font face="tahoma" color="orange" size="4"><br><b>Working at DT Fashion</b></font>
+
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<img src="images/gallery2.jpg" align="center" width="250" height="200"><font face="tahoma" color="orange" size="4"> <br><b>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Students Merit Award</b></font>
+<hr size="2"> 
+<p align="right"><img src="images/gallery3.jpg" width="300" height="200"><font face="tahoma" color="orange" size="4"><br><b>STPM</b></font></p> 
+
+<hr size="2">
+<p align="left"><img src="images/gallery4.jpg" width="300" height="200"><font face="tahoma" color="orange" size="4"><br><b>Intern</b></font></p>  
+
+<hr size="2"> 
+<p align="right"><img src="images/gallery5.jpg" width="300" height="300"><font face="tahoma" color="orange" size="4"><br><b>Excellent Students Award</b></font></p> 
+
+<footer class="w3-container w3-padding-32 w3-light-grey w3-center">
+  <br><br><br><br><h4>Copyright by Nur Qurratu'Aini © 2022</h4>
+  <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+ 
+</footer>
+
+<script>
+// Slideshow
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demodots");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+</body>
+</html>
